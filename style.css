@@ -10,15 +10,13 @@ header{
     display: block;
 }
 .logo{
-    display: inline-block;
-	vertical-align: top;
-	width: 140px;
-	height: 100px;  
-	margin: 0 1% 0 5%;
-    float: none;
+    padding: 0 20px;
+    margin: 0 1% 0 5%;
 }
 header nav a{
     padding: 0 20px;
+    width: 100%;
+    height:100%
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
