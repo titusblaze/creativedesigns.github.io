@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #cfd3ee;
+    padding: 20px 30px;
+    display: block;
+}
+header nav a{
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.banner{
+    min-height: 400px;
+    width: 100%;
+    background-color: beige;
+}
