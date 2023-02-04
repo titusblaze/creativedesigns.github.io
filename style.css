@@ -10,7 +10,12 @@ header{
     display: block;
 }
 .logo{
-    padding-left: 0 20px;
+    display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	height: 100px;  
+	margin: 0 1% 0 5%;
+    float: none;
 }
 header nav a{
     padding: 0 20px;
