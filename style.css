@@ -11,6 +11,8 @@ header{
 }
 header logo{
     padding: 0 10px;
+    width: auto;
+    height: auto;
     vertical-align: top;
     float: left;
 }
