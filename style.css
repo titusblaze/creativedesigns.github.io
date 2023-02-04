@@ -5,9 +5,12 @@ body{
 }
 header{
     background-color: #cfd3ee;
-    text-align: center;
+    text-align: right;
     padding: 20px 30px;
     display: block;
+}
+.logo{
+    padding-left: 0 20px;
 }
 header nav a{
     padding: 0 20px;
