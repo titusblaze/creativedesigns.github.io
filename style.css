@@ -12,6 +12,8 @@ header{
 .logo{
     padding: 0 20px;
     margin: 0 1% 0 5%;
+    vertical-align: top;
+    float: inline-start;
 }
 header nav a{
     padding: 0 20px;
