@@ -5,6 +5,7 @@ body{
 }
 header{
     background-color: #cfd3ee;
+    width: 100%;
     text-align: right;
     padding: 20px 30px;
     display: block;
@@ -13,7 +14,7 @@ header{
     padding: 0 20px;
     margin: 0 1% 0 5%;
     vertical-align: top;
-    float: inline-start;
+    float: left;
 }
 header nav a{
     padding: 0 20px;
