@@ -14,7 +14,7 @@ body{
     padding: 20px 30px;
 }
 
-.nav ul{
+.nav a{
     padding: 0 40px;
     width: 100%;
     text-decoration: none;
