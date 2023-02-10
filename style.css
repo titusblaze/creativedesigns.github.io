@@ -8,12 +8,13 @@ header{
     width: 100%;
     background-color: #cfd3ee;
     text-align: right;
-    align-items: center;
+    align-items: right;
     padding: 20px 30px;
     display: flex;
 }
 header logo{
     flex: 1;
+    align-items: left;
 }
 header nav a{
     padding: 0 40px;
