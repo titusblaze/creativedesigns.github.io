@@ -8,7 +8,9 @@ header{
     width: 100%;
     background-color: #cfd3ee;
     text-align: right;
+    align-items: center;
     padding: 20px 30px;
+    display: flex;
 }
 header logo{
     flex: 1;
@@ -16,9 +18,11 @@ header logo{
 header nav a{
     padding: 0 40px;
     width: 100%;
+    justify-content: space-around;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
+    display: flex;
 }
 .banner{
     min-height: 400px;
@@ -26,10 +30,4 @@ header nav a{
     text-align: center;
     width: 100%;
     background-color: beige;
-}
-footer{
-    background-color: black;
-    text-decoration-color: #cfd3ee;
-    width: 100%;
-    text-align: center;
 }
