@@ -29,7 +29,6 @@ header nav a{
     background-color: beige;
 }
 footer{
-    display: flex;
     width: 100%;
     text-align: center;
 }
