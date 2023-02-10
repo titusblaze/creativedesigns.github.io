@@ -31,3 +31,8 @@ header nav a{
     width: 100%;
     background-color: beige;
 }
+footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
