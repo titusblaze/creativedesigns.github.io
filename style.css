@@ -29,6 +29,8 @@ header nav a{
     background-color: beige;
 }
 footer{
+    background-color: black;
+    text-decoration-color: #cfd3ee;
     width: 100%;
     text-align: center;
 }
