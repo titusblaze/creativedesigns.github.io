@@ -12,7 +12,6 @@ header{
 }
 header logo{
     flex: 1;
-    align-items: left;
 }
 header nav a{
     padding: 0 40px;
