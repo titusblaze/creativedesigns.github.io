@@ -33,6 +33,15 @@ nav a {
     vertical-align: middle;
      
 }
+nav ul{
+    padding: 0 20px;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline;
+    vertical-align: middle;
+}
 .banner{
     
     min-height: 120vh;
