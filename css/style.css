@@ -75,6 +75,20 @@ nav a {
     padding: 0 10rem;
     width: 100%;
     background-color: beige;
+    display:grid;
+    /*align-items:unset;*/
+    justify-content:left;
+    background-image: url(https://nerariyan.com/wp-content/uploads/2022/02/photography.jpg);
+    background-position-y: center;
+	/* linear-gradient(218deg, rgba(195,195,243,1), rgba(255,188,188,0.81)); */
+    transition: all ease-in 0.93s;
+}
+.content{
+    /*min-height: 100vh; */
+    padding: 0 10rem;
+    height:auto;
+    width: 100%;
+    background-color: beige;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -82,15 +96,29 @@ nav a {
 	linear-gradient(218deg, rgba(195,195,243,1), rgba(255,188,188,0.81));
     transition: all ease-in 2.93s;
 }
+/*
 .banner:hover{
     background: 
 	linear-gradient(180deg, rgba(195,195,243,1), rgba(255,188,188,0.81));
     transition: all ease-in 2.93s;
     cursor: pointer;
-}
+} */
 .banner h1{
-    font-size: xx-large;
-    color: crimson;
+    /*font-size: xx-large;*/
+    
+    margin-top: 400px;
+    font-size: 50px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100px;
+}
+.banner h5{
+    font-size:small;
+    margin-bottom: 150px;
+    margin-left: 260px;
+    font-size: 25px;
+    color: whitesmoke;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100px;
