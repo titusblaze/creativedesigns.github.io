@@ -147,7 +147,7 @@ footer{
     min-height: 50px;
     padding: 20px 0;
 }
- h5{
+ footer h5{
     margin:0;
     text-align: center;
 }
@@ -162,6 +162,26 @@ footer{
         overflow-y:hidden;
         height:auto;
         min-height:auto;
+    }
+    .banner h1{
+        /*font-size: xx-large;*/
+        
+        margin-top: 200px;
+        font-size: 25px;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 100px;
+    }
+    .banner h5{
+        font-size:small;
+        margin-bottom: 150px;
+        margin-left: 100px;
+        font-size: 10px;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 100px;
     }
     .content{
     flex-direction:column;
