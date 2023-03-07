@@ -194,5 +194,9 @@ footer{
     overflow-y:hidden;
     height:auto;
     min-height:auto;
+    width:100%;
 }
+.about p{
+    margin-left: auto;
+    margin-right: auto;
 }
