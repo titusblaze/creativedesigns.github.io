@@ -181,6 +181,10 @@ footer{
     align-items:center;
     justify-content:center;
 }
+.footer-content a{
+    text-decoration: none;
+    color:aliceblue;
+}
  footer h5{
     margin:0;
     text-align: center;
@@ -280,5 +284,23 @@ footer{
 }
 .content-data p{
     padding: 25px 25px;
+}
+.footer-box{
+    
+    padding: 24px 25px;
+    overflow-y:hidden;
+    height:auto;
+    width:100%;
+    min-height:400px;
+    overflow-x: hidden;
+}
+.footer-content{
+    display:flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    overflow-y:hidden;
+    height:auto;
+    width:100%;
+    min-height:auto;
 }
 }
