@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    width:100%;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -81,7 +82,7 @@ header a.dropbtn{
     width: 100%;
     background-color: beige;
     display:flex;
-    flex-direction: column;
+    
     align-items: flex-start;
     justify-content: flex-start;
     background-image: url(https://nerariyan.com/wp-content/uploads/2022/02/photography.jpg);
@@ -89,6 +90,33 @@ header a.dropbtn{
     background-position-y: center;
 	/* linear-gradient(218deg, rgba(195,195,243,1), rgba(255,188,188,0.81)); */
     transition: all ease-in 0.93s;
+}
+
+.banner h1{
+    /*font-size: xx-large;*/
+    
+    /*margin-top: 400px; */
+    padding: 200px 0;
+    font-size: 50px;
+    
+    color: whitesmoke;
+    text-transform: uppercase;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100px;
+}
+.banner h5{
+    font-size:small;
+    
+   /* margin-bottom: 150px;
+    margin-left: 260px; */
+    
+    
+    font-size: 25px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 .content{
     /*min-height: 100vh; */
@@ -129,32 +157,7 @@ header a.dropbtn{
     transition: all ease-in 2.93s;
     cursor: pointer;
 } 
-.banner h1{
-    /*font-size: xx-large;*/
-    
-    /*margin-top: 400px; */
-    padding:200px 0;
-    font-size: 50px;
-    
-    color: whitesmoke;
-    text-transform: uppercase;
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100px;
-}
-.banner h5{
-    font-size:small;
-    
-   /* margin-bottom: 150px;
-    margin-left: 260px; */
-    
-    text-align: start;
-    font-size: 25px;
-    color: whitesmoke;
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
+
 
 
 footer{
