@@ -1,6 +1,6 @@
 *{box-sizing:border-box;}
 body{
-    margin: 0;
+    margin:80px 0;
     padding: 0;
     max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,7 +51,7 @@ header a.dropbtn{
 }*/
 
 .search ul{
-    margin-top: 80px;
+    margin-top: 0px;
     padding: 10px 20px;
     min-height: auto;
     width: 100%;
@@ -77,22 +77,22 @@ header a.dropbtn{
     
 }
 .banner{
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 1rem 1rem;
     width: 100%;
     background-color: beige;
     display:flex;
-    
     align-items:center;
     justify-content: flex-start;
     background-image: url(https://nerariyan.com/wp-content/uploads/2022/02/photography.jpg);
-    border-image-repeat: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-position-y: center;
 	/* linear-gradient(218deg, rgba(195,195,243,1), rgba(255,188,188,0.81)); */
     transition: all ease-in 0.93s;
 }
 .banner>div{
-    padding:200px 100px;
+    padding:20px 100px;
 }
 .banner h1{
     font-size: 50px;
@@ -316,20 +316,24 @@ footer h5{
 } 
 
     .banner{
-        min-height: 100vh;
-        padding: 1rem 1rem;
+        min-height: 30vh;
+        padding: 0;
         flex-direction:column;
-        width:100%;
+        width:auto;
         align-items: center;
         justify-content: center;
+        background-size:100%;
+        background-repeat:no-repeat;
+        margin: 0;
         
     }
     .banner>div{
-        padding:200px 25px;
+        padding:25px 25px;
     }
     .banner h1{
         /*font-size: xx-large;*/
-        font-size: 25px;
+        font-size: 15px;
+        padding:25px 25px;
     }
     .banner h5{
         font-size:15px;
