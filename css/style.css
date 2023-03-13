@@ -290,9 +290,11 @@ footer h5{
         transform: translateY(0);
         opacity: 0;
     }
-    to{transform: translateY(-20px);
+    to{
+        transform: translateY(-20px);
         opacity:1;
-        transition: all ease-in 0.33s;}
+        transition: all ease-in 0.33s;
+    }
 }
 @media only screen and (max-width: 768px) {
     nav a{
@@ -388,7 +390,7 @@ footer h5{
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.3s
   }
   
   /* Add Animation */
