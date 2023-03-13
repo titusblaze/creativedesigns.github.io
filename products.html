@@ -36,17 +36,60 @@
                     <a href="#ba4">Graphic Designs</a>
                 </div>
               </div>
-        <div class="dropdown">
-            <a class="dropbtn"><img src="https://cdn-icons-png.flaticon.com/128/9451/9451364.png" width="40px" height="65px">
-            </a>
-            <div class="dropdown-content">
-                      <a href="index.html">Home</a>
-                      <a href="about.html">About</a>
-                      <a href="services.html">Services</a>
-                      <a href="products.html">Products</a>
-                      <a href="contact.html">Contact us</a>
+              <div class="dropdown">
+                <!-- Trigger/Open The Modal -->
+    <a id="myBtn" class="menu-icon"><img  src="https://cdn-icons-png.flaticon.com/128/9451/9451364.png" width="40px" height="65px"></a>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Menu</h2>
+      </div>
+      <div class="modal-body">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        
+      </div>
+      
+    </div>
+    
+    </div>
+    <script>
+      // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    
+    </script>
             </div>
-          </div>
         </div>
     </header>
 
