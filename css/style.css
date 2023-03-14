@@ -225,6 +225,9 @@ header a.dropbtn{
 
 }
 
+.checked {
+    color: orange;
+  }
 
 
 footer{
@@ -283,6 +286,51 @@ footer h5{
 }
 .footer-contact{
     padding:0 20px;
+}
+
+.review{
+    /*min-height: 100vh; */
+    padding: 6rem 10rem;
+    height:auto;
+    width: 100%;
+    background-color: beige;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    background: 
+	linear-gradient(218deg, rgba(195,195,243,1), rgba(255,188,188,0.81));
+   /* transition: all ease-in 2.93s; */
+}
+.review-data{
+    /*min-height: 100vh; */
+    
+    height:auto;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+}
+.review-data h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.review-data p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    /*margin-left: 120px;*/
+    /*font-size: 20px;*/
+    letter-spacing: 19px;
+}
+.review-data a{
+    text-decoration: none;
+    color:rgb(57, 57, 177);
+    padding-right: 0px;
+}
+.review-write{
+    margin-left: 100px;
 }
  
 @keyframes arrow{
@@ -357,7 +405,7 @@ footer h5{
     background-color:rgba(0,0,0,1);
     padding: 2px 16px;
     color:white;
-    height:89.4%;
+    height:calc(100vh - 74px);
     border-color: none;
   }
   .modal-body li{
@@ -448,7 +496,7 @@ footer h5{
 } 
 
     .banner{
-        min-height: 30vh;
+        min-height: auto;
         padding: 0;
         flex-direction:column;
         width:auto;
@@ -492,6 +540,7 @@ footer h5{
     width:100%;
     min-height:auto;
 }
+
 .content-data p{
     padding: 25px 25px;
 }
@@ -516,5 +565,6 @@ footer h5{
 iframe{
     
     width: auto;
+    padding:0;
 }
 }
