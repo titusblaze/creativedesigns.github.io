@@ -293,14 +293,19 @@ footer h5{
     padding: 6rem 10rem;
     height:auto;
     width: 100%;
-    background-color: beige;
+    /*background-color: beige;*/
     display:flex;
     flex-direction: column;
     align-items:center;
     justify-content:center;
+    /*background-image: url(https://content.jdmagicbox.com/comp/def_content/photo_studios/default-photo-studios-8.jpg?clr=006600);*/
     background: 
-	linear-gradient(218deg, rgba(195,195,243,1), rgba(255,188,188,0.81));
-   /* transition: all ease-in 2.93s; */
+	linear-gradient(218deg, rgba(195,195,243,0.5), rgba(255,188,188,0.81));
+    transition: all ease-in 2.93s;
+}
+.review iframe{
+    width:100%;
+    height:420px;
 }
 .review-data{
     /*min-height: 100vh; */
@@ -539,6 +544,46 @@ footer h5{
     height:auto;
     width:100%;
     min-height:auto;
+}
+.review{
+    
+    padding: 70px 0px;
+    overflow-y:hidden;
+    height:auto;
+    width:100%;
+    overflow-x: hidden;
+}
+.review iframe{
+    width:100%;
+    height:550px;
+}
+.review-data{
+    display:flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    height:auto;
+    width:100%;
+    min-height:auto;
+}
+.review-data h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.review-data p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    /*margin-left: 120px;*/
+    /*font-size: 20px;*/
+    letter-spacing: 19px;
+}
+.review-data a{
+    text-decoration: none;
+    color:rgb(57, 57, 177);
+    padding-right: 0px;
+}
+.review-write{
+    margin-left: 100px;
 }
 
 .content-data p{
