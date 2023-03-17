@@ -134,10 +134,11 @@ header a.dropbtn{
     width: inherit;
     height: inherit;
     object-fit: cover;
+    position: relative;
   }
   
   #container_slider .prev, #container_slider .next {
-    width:var( --big_nav_width);
+    width:10%;
     height: inherit;
     position: absolute;
     top: 0;
@@ -149,11 +150,13 @@ header a.dropbtn{
   }
   
   #container_slider .next {
+    display: flex;
     right: 0;
-    animation: right-arrow 1s ease-in 0s forwards;
+    
   }
   
   #container_slider .prev {
+    
     left: 0;
     
   }
@@ -163,7 +166,7 @@ header a.dropbtn{
         opacity: 0;
     }
     to{
-        transform: translateX(-20px);
+        transform: translateX(-5px);
         opacity:1;
         transition: all ease-in 0.33s;
     }
@@ -174,7 +177,7 @@ header a.dropbtn{
         opacity: 0;
     }
     to{
-        transform: translateX(-20px);
+        transform: translateX(5px);
         opacity:1;
         transition: all ease-in 0.33s;
     }
@@ -188,7 +191,7 @@ header a.dropbtn{
   
   #container_slider .prev span, #container_slider .next span {
     position: absolute;
-    width: 100px;
+    width: auto;
     height: 0px;
     border: solid 20px;
     top: 50%;
@@ -199,14 +202,16 @@ header a.dropbtn{
   }
   
   #container_slider .prev span {
+    
     border-color: transparent #fff transparent transparent;
-    right: 50%;
+    animation: left-arrow 1s ease-in 0s infinite backwards;
     /*right/left: 45%; per "centrare" le freccine in orizzonatale */
   }
   
   #container_slider .next span {
     border-color: transparent transparent transparent #fff;
-    left: 50%;
+    
+    animation: right-arrow 1s ease-in 0s infinite forwards;
   }
   
   #container_slider #nav_slide {
@@ -735,12 +740,13 @@ footer h5{
     #container_slider {
        margin-top: auto;
        width:100%;
-       height:275px;
+       height:250px;
    
      }
    
      .slide_img .prev, .slide_img .next {
        width:auto;
+       
      }
    
      .slide_img .prev span, .slide_img .next span {
@@ -759,8 +765,8 @@ footer h5{
 
    
      #nav_slide .dots {
-       width:var(--dot-width_small);
-       height:var(--dot-height_small);
+       width:10px;
+       height:10px;
      }
    
 
