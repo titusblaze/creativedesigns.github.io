@@ -108,11 +108,11 @@ header a.dropbtn{
   #container_slider {
     
     margin-top:36px;
-    position: relative;
-    width:var(--big_width,100%);
+    position:relative;
+    width:100%;
     /*height: 0;   prima
     padding-bottom: $big_height;*/
-    height:var( --big_height);
+    height:82vh;
     user-select: none; /*setto gli input radio a niente, nessuno checked all'utente, (di default parto col primo, settato in html)*/
     background-color: #1c1c1c;
     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24);
@@ -234,7 +234,7 @@ header a.dropbtn{
     position: relative;
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.5);
-    transition: 1s;
+    transition: 0.33s;
     cursor: pointer;
   }
   
@@ -260,7 +260,7 @@ header a.dropbtn{
   #container_slider #i4:checked ~ #four {
     z-index: 9;
     opacity: 1;
-    animation: scroll 1.4s ease-in-out;
+    animation: scroll 0.33 ease-in-out;
   }
   
   /*quando sei sulla rispettiva slide */
@@ -290,39 +290,6 @@ header a.dropbtn{
     }
   }
   
-  
-  
-   
-  
-  @media screen and (max-width: 685px) {
-   #container_slider {
-      
-      width:var(--small_width,100%);
-      height:var(--small_height);
-  
-    }
-  
-    .slide_img .prev, .slide_img .next {
-      width:var(--small_nav_width);
-    }
-  
-    .slide_img .prev span, .slide_img .next span {
-      border: solid 12px;
-    }
-  
-    .slide_img .prev span {
-      border-color: transparent #fff transparent transparent;
-    }
-  
-    .slide_img .next span {
-      border-color: transparent transparent transparent #fff;
-    }
-  
-    #nav_slide .dots {
-      width:var(--dot-width_small);
-      height:var(--dot-height_small);
-    }
-  }
   
 
 .banner{
@@ -763,6 +730,39 @@ footer h5{
     transition: all ease-in 2.93s;
     cursor: pointer;
 } 
+
+
+    #container_slider {
+       
+       width:100%;
+       height:250px;
+   
+     }
+   
+     .slide_img .prev, .slide_img .next {
+       width:auto;
+     }
+   
+     .slide_img .prev span, .slide_img .next span {
+       border: 12px;
+     }
+     #container_slider .prev span {
+        border-color: transparent #fff transparent transparent;
+        width:auto;
+        /*right/left: 45%; per "centrare" le freccine in orizzonatale */
+      }
+      #container_slider .next span {
+        border-color: transparent transparent transparent #fff;
+        width:auto;
+      }
+
+
+   
+     #nav_slide .dots {
+       width:var(--dot-width_small);
+       height:var(--dot-height_small);
+     }
+   
 
     .banner{
         min-height: auto;
