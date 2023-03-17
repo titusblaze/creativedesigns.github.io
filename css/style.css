@@ -29,7 +29,7 @@ header{
     display: flex;
     flex-direction: row;
     width: fit-content;
-    margin-left: 0px;
+    margin-left: 6px;
     height: 30px;
     width: auto;
     color:goldenrod;
