@@ -1,7 +1,7 @@
 *{box-sizing:border-box;}
 body{
     margin:0;
-    padding-top: 80px;
+    padding-top: 60px;
     max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
@@ -12,12 +12,12 @@ html{
 }
 header{
     width: 100%;
-    padding: 20px 20px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position:fixed;
-    height: 80px;
+    height: 60px;
     top: 0;
     left: 0;
     background-color:  rgba(0, 0, 0,1);
@@ -26,8 +26,20 @@ header{
     
 }
 .logo{
+    display: flex;
+    flex-direction: row;
     width: fit-content;
-    margin-left: 10px;
+    margin-left: 0px;
+    height: 30px;
+    width: auto;
+    color:goldenrod;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.logo p{
+    color:currentColor;
 }
 
 nav a {
@@ -64,7 +76,7 @@ header a.dropbtn{
 }
 .search li{
     
-    padding: 0px 20px;
+    padding: 0px 10px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -107,13 +119,14 @@ header a.dropbtn{
   
   #container_slider {
     
-    margin-top:52px;
+    margin-top:36px;
     position:relative;
     width:100%;
+    
     /*height: 0;   prima
     padding-bottom: $big_height;*/
-    height:82vh;
-    user-select: none; /*setto gli input radio a niente, nessuno checked all'utente, (di default parto col primo, settato in html)*/
+    height:85vh;
+    /*user-select:auto; setto gli input radio a niente, nessuno checked all'utente, (di default parto col primo, settato in html)*/
     background-color: #1c1c1c;
     box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24);
     
