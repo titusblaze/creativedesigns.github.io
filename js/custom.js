@@ -1,3 +1,6 @@
+
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -22,4 +25,17 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+
+// automatic slider
+onload  = start;
+
+function start(){	
+var i = 1;
+function Move(){ 	
+	i = (i%4)+1; // 4 is the Number of image in slider
+	document.getElementById('i'+i).checked = true;
+}
+setInterval(Move,5000); //change img in 3 sec
 }
