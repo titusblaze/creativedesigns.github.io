@@ -107,7 +107,7 @@ header a.dropbtn{
   
   #container_slider {
     
-    margin-top:36px;
+    margin-top:52px;
     position:relative;
     width:100%;
     /*height: 0;   prima
@@ -200,13 +200,13 @@ header a.dropbtn{
   
   #container_slider .prev span {
     border-color: transparent #fff transparent transparent;
-    right: 45%;
+    right: 50%;
     /*right/left: 45%; per "centrare" le freccine in orizzonatale */
   }
   
   #container_slider .next span {
     border-color: transparent transparent transparent #fff;
-    left: 45%;
+    left: 50%;
   }
   
   #container_slider #nav_slide {
@@ -733,9 +733,9 @@ footer h5{
 
 
     #container_slider {
-       
+       margin-top: auto;
        width:100%;
-       height:250px;
+       height:275px;
    
      }
    
