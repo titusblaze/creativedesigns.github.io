@@ -86,7 +86,6 @@ header a.dropbtn{
     margin-left: auto;
     margin-right: auto; 
     text-align: center;   
-    
 }
 .search a{
     
@@ -143,7 +142,7 @@ header a.dropbtn{
     position: absolute;
     width: 100%;
     height: 100%;
-    
+    z-index: -1;
   }
   
   #container_slider img {
@@ -158,8 +157,8 @@ header a.dropbtn{
     height: inherit;
     position: absolute;
     top: 0;
-    /*background-color: rgba(6, 185, 255, 0.2);-----------*/
-    
+    /*background-color: rgba(6, 185, 255, 0.2);*/
+    /*z-index: 99;*/
     transition: .45s;
     cursor: pointer;
     text-align: center;
@@ -231,14 +230,14 @@ header a.dropbtn{
   }
   
   #container_slider #nav_slide {
-    /*mini bottoncini sotto --------------*/
+    /*mini bottoncini sotto */
     
     width: 100%;
     bottom: 5%;
     height: 11px;
     position: absolute;
     text-align: center;
-    
+    z-index: 99;
     cursor: pointer;
     display: flex;
     gap: 10px;
@@ -279,7 +278,7 @@ header a.dropbtn{
   #container_slider #i2:checked ~ #two,
   #container_slider #i3:checked ~ #three,
   #container_slider #i4:checked ~ #four {
-    
+    z-index: 9;
     opacity: 1;
     animation: scroll 0.33 ease-in-out;
   }
@@ -777,7 +776,11 @@ footer h5{
         border-color: transparent transparent transparent #fff;
         width:auto;
       }
-
+      #container_slider .prev:hover, #container_slider .next:hover {
+        transition: .3s;
+        /*background-color: rgba(44, 221, 196, 0.53);*/
+        border-color: #4CAF50;
+      }
 
    
      #nav_slide .dots {
