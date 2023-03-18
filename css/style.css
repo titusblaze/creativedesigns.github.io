@@ -895,10 +895,14 @@ footer h5{
     align-items: center;
     justify-content: center;
     margin: 0;
-  padding: 15px 4px 17px 0;
+    padding: 15px 4px 17px 0;
+    cursor: pointer;
   }
   
-  .dropdown:hover .dropbtn {background-color: none}
+  .dropdown:hover .dropbtn {
+    background-color: none;
+    cursor: pointer;
+  }
 
   .content:hover{
     background: 
