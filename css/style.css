@@ -379,7 +379,20 @@ header a.dropbtn{
     background: linear-gradient(218deg, rgba(195,195,243,1), rgba(255,188,188,0.81));
    /* transition: all ease-in 2.93s; */
 }
-.content h1{
+.content-product{
+    /*min-height: 100vh; */
+    padding: 6rem 0rem 0rem 0rem;
+    height:auto;
+    width: 100%;
+    background-color: beige;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(218deg, rgba(195,195,243,1), rgba(255,188,188,0.81));
+   /* transition: all ease-in 2.93s; */
+}
+.content-product h1{
     text-transform: uppercase;
 }
 .content-data{
@@ -952,7 +965,7 @@ footer h5{
     width:100%;
     overflow-x: hidden;
 }
-.content h1{
+.content-product h1{
     font-size: 20px;
 }
 
