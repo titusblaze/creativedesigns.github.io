@@ -159,18 +159,21 @@ header a.dropbtn{
 
   }
   .slider-text{
-    position:relative;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
-    color:white;
+    background-color: #80808000;
+    color: white;
+    top: -100px;
+    font-size: 14px;
+    text-shadow: #333 2px 3px 8px;
 
   
   }
   
   #container_slider .prev, #container_slider .next {
-    width:10%;
+    width:60px;
     height: inherit;
     position: absolute;
     top: 0;
@@ -182,14 +185,15 @@ header a.dropbtn{
   }
   
   #container_slider .next {
-    display: flex;
-    left: 85%;
+   
+    right: 0;
+    text-align: left;
     
   }
   
   #container_slider .prev {
     
-    right: 90%;
+    left:0;
     
   }
   @keyframes left-arrow{
@@ -198,7 +202,7 @@ header a.dropbtn{
         opacity: 0;
     }
     to{
-        transform: translateX(-20px);
+        transform: translateX(-10px);
         opacity:1;
         transition: all ease-in 0.33s;
     }
@@ -209,7 +213,7 @@ header a.dropbtn{
         opacity: 0;
     }
     to{
-        transform: translateX(20px);
+        transform: translateX(10px);
         opacity:1;
         transition: all ease-in 0.33s;
     }
@@ -238,12 +242,14 @@ header a.dropbtn{
     border-color: transparent #fff transparent transparent;
     animation: left-arrow 1s ease-in 0s infinite backwards;
     /*right/left: 45%; per "centrare" le freccine in orizzonatale */
+    margin-top:-20px;
   }
   
   #container_slider .next span {
     border-color: transparent transparent transparent #fff;
     
     animation: right-arrow 1s ease-in 0s infinite forwards;
+    margin-top:-20px;
   }
   
   #container_slider #nav_slide {
@@ -860,7 +866,8 @@ footer h5{
   .dropdown-content {
     display: none;
     position: absolute;
-    
+    right:0;
+    top:39px;
     background-color: black;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -920,7 +927,9 @@ footer h5{
         border-color: transparent transparent transparent #fff;
         width:auto;
       }
-
+      .slider-text{
+        top: -74px;
+      }
 
    
      #nav_slide .dots {
