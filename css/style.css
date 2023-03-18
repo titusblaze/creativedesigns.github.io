@@ -844,7 +844,7 @@ footer h5{
 .menu-icon i{
     color:goldenrod;
     font-size: 20px;
-    padding: 14px;
+    padding: 10px;
 }
 .dropdown button {
     background-color:transparent;
@@ -854,7 +854,7 @@ footer h5{
 .dropbtn {
     /*background-color: #04AA6D;*/
     color: none;
-    padding: 16px;
+    padding: 10px;
     font-size: 20px;
     border: none;
   }
@@ -865,16 +865,16 @@ footer h5{
   .dropdown {
     position: relative;
     display: inline-block;
-    margin:auto;
+    
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
     right:0;
-    top:39px;
+    top:54px;
     background-color: black;
-    min-width: 200px;
+    min-width: 260px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     
@@ -888,27 +888,24 @@ footer h5{
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;cursor: pointer;}
+  .dropdown-content a:hover {background-color: #ddd;}
   
   .dropdown:hover .dropdown-content {
     display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 15px 4px 17px 0;
-    cursor: pointer;
+
+    
   }
   
   .dropdown:hover .dropbtn {
     background-color: none;
-    cursor: pointer;
+    
   }
 
   .content:hover{
     background: 
 	linear-gradient(180deg, rgba(195,195,243,1), rgba(255,188,188,0.81));
     transition: all ease-in 2.93s;
-    cursor: pointer;
+    
 } 
 
 
