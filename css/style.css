@@ -888,7 +888,7 @@ footer h5{
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: #ddd;cursor: pointer;}
   
   .dropdown:hover .dropdown-content {
     display: block;
