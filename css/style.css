@@ -844,7 +844,12 @@ footer h5{
 .menu-icon i{
     color:goldenrod;
     font-size: 20px;
-    padding: 16px;
+    padding: 14px;
+}
+.dropdown button {
+    background-color:transparent;
+    border-color:transparent;
+
 }
 .dropbtn {
     /*background-color: #04AA6D;*/
