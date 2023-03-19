@@ -156,8 +156,57 @@ header a.dropbtn{
     position: relative;
     text-align: center;
     color: white;
-
   }
+
+  /*----modal form-----*/
+  .modal-content{
+    position:relative;
+    width:80%;
+    height:750px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  /* Modal Header */
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  .hide{
+    height: 0px !important;
+    overflow: hidden !important;
+  }
+  /* Modal Body */
+  .modal-body {
+    padding: 2px 16px;   
+    overflow-y: hidden; 
+    height:650px;
+  }
+  
+  
+  .plugins{
+    width: inherit;
+      height: inherit;
+      object-fit: cover;
+      position: relative;
+    z-index:0;
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: 0; opacity: 1}
+    to {top: -300px; opacity: 0}
+  }
+
+
+  /*----modal form-----*/
+
   .slider-text{
     position: relative;
     display: flex;
@@ -580,6 +629,57 @@ header a.dropbtn{
     color:#88b06a;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+  /*----modal form-----*/
+  .modal-content{
+    position:relative;
+    width:300px;
+    height:autopx;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  /* Modal Header */
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  .hide{
+    height: 0px !important;
+    overflow: hidden !important;
+  }
+  .hideDisplay{
+    display: none !important;
+  }
+  /* Modal Body */
+  .modal-body {
+    padding: 2px 16px;   
+    overflow-y: hidden; 
+    height:650px;
+  }
+  
+  
+  .plugins{
+    width: inherit;
+      height: inherit;
+      object-fit: cover;
+      position: relative;
+    z-index:0;
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: 0; opacity: 1}
+    to {top: -300px; opacity: 0}
+  }
+
+
+  /*----modal form-----*/
 
 .table-content {
     margin-left: auto;
@@ -587,6 +687,7 @@ header a.dropbtn{
     width: 100%;
     line-height: 1.5;
     text-align: center;
+    
   }
   .table-content td{
     padding: 0 5px;
@@ -729,6 +830,8 @@ footer h5{
 .review-write{
     margin-left: 20px;
 }
+
+
  
 
 @media only screen and (max-width: 768px) {
@@ -754,7 +857,17 @@ footer h5{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
+  .form-modal{
+    position: fixed; /* Stay in place */
+    z-index: 200; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh;
+    overflow: scroll;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
   /* Modal Content/Box */
   .modal-content {
     background-color: black;
@@ -765,9 +878,28 @@ footer h5{
     opacity: 90%;
 
   }
-  
+  .modal.contact{
+    display: block;
+    width:100%;
+    height:100%;
+    padding:0;
+}
   /* The Close Button */
   .close {
+    color: white;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  /* The Close Button */
+  .contactClose {
+    color: white;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .contact .closer {
     color: white;
     float: right;
     font-size: 50px;
@@ -793,6 +925,14 @@ footer h5{
     padding: 2px 16px;
     color:white;
     height:calc(100vh - 74px);
+    border-color: none;
+  }
+ #myContactModal .modal-body {
+    background-color:rgba(0,0,0,1);
+    padding: 2px 16px;
+    color:white;
+    height:calc(100% - 44px);
+    overflow: hidden;
     border-color: none;
   }
   .modal-body li{
@@ -869,7 +1009,6 @@ footer h5{
   }
   
   .dropdown-content {
-    display: none;
     position: absolute;
     right:0;
     top:54px;
@@ -889,12 +1028,14 @@ footer h5{
   }
   
   .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+  .dd-display{
+    display: none;
+  }
+  /* .dropdown:hover .dropdown-content {
+    display: block ;
 
     
-  }
+  } */
   
   .dropdown:hover .dropbtn {
     background-color: none;

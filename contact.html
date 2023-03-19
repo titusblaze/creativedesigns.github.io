@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,12 +34,12 @@
     <button id="myBtn" class="menu-icon"><i class="fa fa-bars"></i> </button>
     
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal contact hideDisplay">
     
       <!-- Modal content -->
       <div class="modal-content">
       <div class="modal-header">
-        <span class="close">&times;</span>
+        <span class="closer">&times;</span>
         <h2>Menu</h2>
       </div>
       <div class="modal-body">
@@ -82,6 +83,36 @@
                             Name:                                                                                                                                                                                                                                 
                             Phone No.:                                                                                                                                                                                                                                  
                             Message:  " target="_blank">Get Quote</a>
+                        
+                            <!--Get Quote-->
+                            <!--xxxxxxxxxxxxxyyyyyyyyyyyyyyyyzzzzzzzzzzzzzzzz-->
+
+                            <!-- Trigger/Open The Modal -->
+<button type="button" id="myContactBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myContactModal" class="form-modal hide">
+
+  <!-- Modal content -->
+  <!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="contactClose">&times;</span>
+    <h2>Modal Header</h2>
+  </div>
+  <div class="modal-body">
+    <script class="plugins" type="text/javascript" src="https://form.jotform.com/jsform/230740986593467"></script>
+  </div>
+
+</div>
+
+</div>
+
+
+
+                            <!--xxxxxxxxxxxxxyyyyyyyyyyyyyyyyzzzzzzzzzzzzzzzz-->
+
+
                         </div>
                     </div>
                     <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.44138029422!2d77.9705893!3d8.553485199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b038983d6f8f165%3A0xc24d531434a22603!2sGolden%20Dreams%20Photography!5e0!3m2!1sen!2sin!4v1678466736115!5m2!1sen!2sin" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -120,5 +151,27 @@
         <p><h5>Design and Developed by Creative Designs Work</h5></p>
     </footer>
     <script src="/js/custom.js" type="text/javascript"></script>
+    <script>
+        var contactModal = document.getElementById("myContactModal");
+        var contactTrigger = document.getElementById("myContactBtn");
+        var spanCloseMenu = document.getElementsByClassName("contactClose")[0];
+        var closeMenu = document.getElementsByClassName('closer')[0];
+        var modalMenu = document.getElementById("myModal");
+        // Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+        contactTrigger.onclick = function(){
+            contactModal.classList.toggle('hide');
+        }
+        spanCloseMenu.onclick = function() {
+            contactModal.classList.toggle('hide');
+        }
+        closeMenu.onclick = function() {
+    modalMenu.classList.toggle('hideDisplay');
+}
+        btn.onclick = function() {
+    modalMenu.classList.toggle('hideDisplay');
+}
+
+    </script>
 </body>
 </html>
