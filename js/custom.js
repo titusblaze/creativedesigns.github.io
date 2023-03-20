@@ -24,6 +24,21 @@
     }
   }
 
+  //back key press modal is showing
+  var showModal = function() {
+    // some code here to show the HTML elements...
+
+    window.history.pushState('backPressed', null, null);
+    window.history.pushState('dummy', null, null);
+    window.addEventListener('popstate', hideModal, { once: true });
+};
+
+var hideModal = function(event) {
+    if (event.state == 'backPressed') {
+        // hide the HTML elements
+    }
+};
+
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
