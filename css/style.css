@@ -159,11 +159,28 @@ header a.dropbtn{
   }
 
   /*----modal form-----*/
+  .formbtn {
+    background-color: #88b06a;
+    border-color: transparent;
+    padding:8px 54px;
+    border-radius: 20px;
+    font-family: "Quattrocento",serif;
+    color:white;
+    height:40px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .formbtn button:hover{
+    background-color: white;
+    color:#88b06a
+  }
+  
   .modal-content{
     position:relative;
+    right:50%;
+    left:50%;
     width:80%;
     height:750px;
-    position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
@@ -181,6 +198,10 @@ header a.dropbtn{
   .hide{
     height: 0px !important;
     overflow: hidden !important;
+  }
+  
+  .hideDisplay{
+    display: none !important;
   }
   /* Modal Body */
   .modal-body {
@@ -579,7 +600,6 @@ header a.dropbtn{
 }
 .contact-data>div{
     width:100%;
-
 }
 .contact-data a{
     -webkit-font-smoothing: antialiased;
@@ -597,17 +617,24 @@ header a.dropbtn{
     display: inline-block;
     text-transform: uppercase;
     white-space: nowrap;
-    padding: 8px 54px;
+    padding: 8px 30px;
     margin: 0 0 16px;
     background-color: #88b06a;
     border-radius: 40px;
     border-color: #88b06a;
     transition: 0.4s;
+    gap: 100px;
 }
 .contact a:hover{
     background-color:white;
     color:#88b06a;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.contact-data address{
+    margin-bottom: 16px;
+}
+.contact-data address:hover{
+    color:blue;
 }
 .contact-data li{
     
@@ -620,21 +647,25 @@ header a.dropbtn{
 
 }
 .contact-data i{
-   color:green;
+   color:white;
    font-size: 20px;
    margin-right: 10px;
 }
-.contact-data i:hover{
-    background-color:white;
+.contact-data a i:hover{
+    
     color:#88b06a;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
 }
   /*----modal form-----*/
+
   .modal-content{
     position:relative;
-    width:300px;
-    height:autopx;
-    position: relative;
+    right:0%;
+    left:0%;
+    top:0%;
+    bottom:0%;
+    width:500px;
+    height:740px;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
@@ -662,7 +693,12 @@ header a.dropbtn{
     overflow-y: hidden; 
     height:650px;
   }
-  
+  .contactClose {
+    color: white;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
   
   .plugins{
     width: inherit;
@@ -674,8 +710,8 @@ header a.dropbtn{
   
   /* Add Animation */
   @keyframes animatetop {
-    from {top: 0; opacity: 1}
-    to {top: -300px; opacity: 0}
+    from {bottom: 0; opacity: 0}
+    to {top: -300px; opacity: 1}
   }
 
 
@@ -986,61 +1022,54 @@ footer h5{
     font-size: 20px;
     padding: 10px;
 }
+/* Dropdown Button */
 .dropdown button {
-    background-color:transparent;
-    border-color:transparent;
-
+  background-color: transparent;
+  color: goldenrod;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
-.dropbtn {
-    /*background-color: #04AA6D;*/
-    color: none;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-  }
-  .dropbtn i{
-    color:goldenrod;
-    font-size: 20px;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    
-  }
-  
-  .dropdown-content {
-    position: absolute;
-    right:0;
-    top:54px;
-    background-color: black;
-    min-width: 260px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    
-  }
-  
-  
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  .dd-display{
-    display: none;
-  }
-  /* .dropdown:hover .dropdown-content {
-    display: block ;
 
-    
-  } */
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #424343;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  margin-top: 13px;
+  right:0%;
+  width: 250px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
   
-  .dropdown:hover .dropbtn {
-    background-color: none;
-    
-  }
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
   .content:hover{
     background: 
